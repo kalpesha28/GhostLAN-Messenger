@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Corporate Messenger Design System */
+
+@layer base {
+  :root {
+    /* Corporate Blue Theme */
+    --background: 210 20% 98%;
+    --foreground: 207 79% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 207 79% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 207 79% 15%;
+
+    /* Primary - Corporate Blue #0F4C81 */
+    --primary: 207 79% 28%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Slate Grey */
+    --secondary: 215 16% 47%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted - Light slate */
+    --muted: 210 20% 94%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Accent - Light blue tint */
+    --accent: 207 60% 94%;
+    --accent-foreground: 207 79% 28%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 20% 88%;
+    --input: 214 20% 88%;
+    --ring: 207 79% 28%;
+
+    --radius: 0.5rem;
+
+    /* Chat-specific tokens */
+    --message-sent: 207 79% 28%;
+    --message-sent-foreground: 0 0% 100%;
+    --message-received: 210 20% 94%;
+    --message-received-foreground: 207 79% 15%;
+    
+    /* Status colors */
+    --status-online: 142 71% 45%;
+    --status-offline: 215 16% 65%;
+    
+    /* Sidebar */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 207 79% 15%;
+    --sidebar-primary: 207 79% 28%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 207 60% 94%;
+    --sidebar-accent-foreground: 207 79% 28%;
+    --sidebar-border: 214 20% 88%;
+    --sidebar-ring: 207 79% 28%;
+
+    /* Chat window background */
+    --chat-background: 210 20% 96%;
+    --chat-pattern: 210 20% 92%;
+  }
+
+  .dark {
+    --background: 207 79% 8%;
+    --foreground: 210 20% 98%;
+
+    --card: 207 50% 12%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 207 50% 12%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 207 70% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 20% 25%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 215 20% 18%;
+    --muted-foreground: 215 16% 65%;
+
+    --accent: 207 40% 20%;
+    --accent-foreground: 207 70% 70%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 20% 20%;
+    --input: 215 20% 20%;
+    --ring: 207 70% 50%;
+
+    --message-sent: 207 70% 40%;
+    --message-sent-foreground: 0 0% 100%;
+    --message-received: 215 20% 18%;
+    --message-received-foreground: 210 20% 98%;
+
+    --sidebar-background: 207 50% 10%;
+    --sidebar-foreground: 210 20% 98%;
+    --sidebar-primary: 207 70% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 207 40% 18%;
+    --sidebar-accent-foreground: 207 70% 70%;
+    --sidebar-border: 215 20% 18%;
+    --sidebar-ring: 207 70% 50%;
+
+    --chat-background: 207 50% 6%;
+    --chat-pattern: 207 40% 10%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+}
+
+@layer components {
+  /* Chat bubble styles */
+  .message-bubble-sent {
+    @apply bg-[hsl(var(--message-sent))] text-[hsl(var(--message-sent-foreground))] rounded-2xl rounded-br-sm px-4 py-2;
+  }
+
+  .message-bubble-received {
+    @apply bg-[hsl(var(--message-received))] text-[hsl(var(--message-received-foreground))] rounded-2xl rounded-bl-sm px-4 py-2;
+  }
+
+  /* Chat background pattern */
+  .chat-pattern {
+    background-color: hsl(var(--chat-background));
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e2e8f0' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  /* Status indicator */
+  .status-online {
+    @apply bg-[hsl(var(--status-online))];
+  }
+
+  .status-offline {
+    @apply bg-[hsl(var(--status-offline))];
+  }
+
+  /* Security badge */
+  .security-badge {
+    @apply bg-primary/10 text-primary border border-primary/20;
+  }
+}
+
+@layer utilities {
+  /* Smooth scrollbar */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--border));
+    border-radius: 3px;
+  }
+
+  /* Fade in animation */
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Slide in from left */
+  .animate-slide-in-left {
+    animation: slideInLeft 0.3s ease-out;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}

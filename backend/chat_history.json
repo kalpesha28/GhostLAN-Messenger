@@ -1,0 +1,180 @@
+[
+  {
+    "id": "broadcast-1",
+    "name": "General Announcements",
+    "type": "broadcast",
+    "participants": [],
+    "messages": [
+      {
+        "id": "1769701564204",
+        "chatId": "broadcast-1",
+        "senderId": "90001",
+        "content": "hello",
+        "type": "text",
+        "timestamp": "2026-01-29T15:46:04.204Z",
+        "isSecret": false,
+        "replyTo": null,
+        "reactions": {},
+        "status": "read",
+        "readBy": [
+          "50001",
+          "10001",
+          "90002"
+        ]
+      },
+      {
+        "id": "1771423572992",
+        "chatId": "broadcast-1",
+        "senderId": "90002",
+        "content": "meeting at 9AM",
+        "type": "text",
+        "timestamp": "2026-02-18T14:06:12.995Z",
+        "isSecret": false,
+        "replyTo": null,
+        "reactions": {},
+        "status": "read",
+        "readBy": [
+          "90001",
+          "50001",
+          "10001"
+        ]
+      }
+    ],
+    "hiddenBy": []
+  },
+  {
+    "id": "1770839971345",
+    "name": "Direct Message",
+    "type": "direct",
+    "participants": [
+      "90001",
+      "10001"
+    ],
+    "messages": [
+      {
+        "id": "1770840019203",
+        "chatId": "1770839971345",
+        "senderId": "90001",
+        "content": "http://localhost:3001/uploads/1770840019185-Admit letter.pdf",
+        "type": "document",
+        "timestamp": "2026-02-11T20:00:19.203Z",
+        "isSecret": false,
+        "replyTo": null,
+        "reactions": {},
+        "status": "read",
+        "readBy": [
+          "10001"
+        ]
+      },
+      {
+        "id": "1770840032891",
+        "chatId": "1770839971345",
+        "senderId": "90001",
+        "content": "http://localhost:3001/uploads/1770840032883-visa.pdf",
+        "type": "document",
+        "timestamp": "2026-02-11T20:00:32.891Z",
+        "isSecret": false,
+        "replyTo": null,
+        "reactions": {},
+        "status": "read",
+        "readBy": [
+          "10001"
+        ]
+      },
+      {
+        "id": "1770840053948",
+        "chatId": "1770839971345",
+        "senderId": "90001",
+        "content": "http://localhost:3001/uploads/1770840053917-2560px-Sukhoi_Su-30MKI-3_'SB_167'_(20443086186).jpg",
+        "type": "image",
+        "timestamp": "2026-02-11T20:00:53.948Z",
+        "isSecret": false,
+        "replyTo": null,
+        "reactions": {
+          "👍🏻": [
+            "90001"
+          ]
+        },
+        "status": "read",
+        "readBy": [
+          "10001"
+        ]
+      },
+      {
+        "id": "1770840132168",
+        "chatId": "1770839971345",
+        "senderId": "10001",
+        "content": "Thank you!",
+        "type": "text",
+        "timestamp": "2026-02-11T20:02:12.169Z",
+        "isSecret": false,
+        "replyTo": {
+          "id": "1770840019203",
+          "senderName": "Vikram Malhotra",
+          "content": "[DOCUMENT]"
+        },
+        "reactions": {},
+        "status": "read",
+        "readBy": [
+          "90001"
+        ]
+      },
+      {
+        "id": "1771480439202",
+        "chatId": "1770839971345",
+        "senderId": "10001",
+        "content": "hey",
+        "type": "text",
+        "timestamp": "2026-02-19T05:53:59.202Z",
+        "isSecret": false,
+        "replyTo": null,
+        "reactions": {},
+        "status": "read",
+        "readBy": [
+          "90001"
+        ]
+      }
+    ],
+    "hiddenBy": []
+  },
+  {
+    "id": "1771423618020",
+    "name": "R&D",
+    "type": "group",
+    "participants": [
+      "90001",
+      "50001"
+    ],
+    "messages": [
+      {
+        "id": "1771423639470",
+        "chatId": "1771423618020",
+        "senderId": "10001",
+        "content": "hello",
+        "type": "text",
+        "timestamp": "2026-02-18T14:07:19.470Z",
+        "isSecret": false,
+        "replyTo": null,
+        "reactions": {},
+        "status": "read",
+        "readBy": [
+          "50001",
+          "90001",
+          "90002"
+        ]
+      }
+    ],
+    "hiddenBy": []
+  },
+  {
+    "id": "1771423679639",
+    "name": "mech dept",
+    "type": "group",
+    "participants": [
+      "50004",
+      "90001",
+      "10001"
+    ],
+    "messages": []
+  }
+]

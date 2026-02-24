@@ -1,0 +1,121 @@
+[
+  {
+    "id": "90001",
+    "name": "Vikram Malhotra",
+    "password": "Vikram1",
+    "role": "head",
+    "department": "Command Centre"
+  },
+  {
+    "id": "90002",
+    "name": "Suresh Nair",
+    "password": "bravo-cmd-88",
+    "role": "head",
+    "department": "Command Centre"
+  },
+  {
+    "id": "50001",
+    "name": "Rajesh Verma",
+    "password": "off-secure-01",
+    "role": "officer",
+    "department": "Cyber Security"
+  },
+  {
+    "id": "50002",
+    "name": "Priya Singh",
+    "password": "off-secure-02",
+    "role": "officer",
+    "department": "Cyber Security"
+  },
+  {
+    "id": "50003",
+    "name": "Amit Patel",
+    "password": "off-secure-03",
+    "role": "officer",
+    "department": "Field Ops"
+  },
+  {
+    "id": "50004",
+    "name": "Sneha Reddy",
+    "password": "off-secure-04",
+    "role": "officer",
+    "department": "Field Ops"
+  },
+  {
+    "id": "50005",
+    "name": "Karan Gill",
+    "password": "off-secure-05",
+    "role": "officer",
+    "department": "Logistics"
+  },
+  {
+    "id": "10001",
+    "name": "Arjun Mehta",
+    "password": "user-pass-001",
+    "role": "worker",
+    "department": "Logistics"
+  },
+  {
+    "id": "10002",
+    "name": "Neha Gupta",
+    "password": "user-pass-002",
+    "role": "worker",
+    "department": "Logistics"
+  },
+  {
+    "id": "10003",
+    "name": "Rohan Das",
+    "password": "user-pass-003",
+    "role": "worker",
+    "department": "Cyber Security"
+  },
+  {
+    "id": "10004",
+    "name": "Kavita Shah",
+    "password": "user-pass-004",
+    "role": "worker",
+    "department": "Cyber Security"
+  },
+  {
+    "id": "10005",
+    "name": "Sanjay Joshi",
+    "password": "user-pass-005",
+    "role": "worker",
+    "department": "Field Ops"
+  },
+  {
+    "id": "10006",
+    "name": "Pooja Yadav",
+    "password": "user-pass-006",
+    "role": "worker",
+    "department": "Field Ops"
+  },
+  {
+    "id": "10007",
+    "name": "Manoj Kumar",
+    "password": "user-pass-007",
+    "role": "worker",
+    "department": "Field Ops"
+  },
+  {
+    "id": "10008",
+    "name": "Riya Kapoor",
+    "password": "user-pass-008",
+    "role": "worker",
+    "department": "Logistics"
+  },
+  {
+    "id": "10009",
+    "name": "Karthik Iyer",
+    "password": "user-pass-009",
+    "role": "worker",
+    "department": "Command Centre"
+  },
+  {
+    "id": "10010",
+    "name": "Anjali Rao",
+    "password": "user-pass-010",
+    "role": "worker",
+    "department": "Command Centre"
+  }
+]
